@@ -15,10 +15,12 @@ TechnoStep is a technology-based website that provides a platform for educationa
 
 ## Project Files 📂  
 Here are the main files in this repository:  
+- `index.html` - The first page of this TechnoStep website
 - `Dashboard.html` - The main dashboard page  
-- `Page1.html` - First content page  
-- `Page2.html` - Second content page  
-- `Design.css` - Styling file for the website  
+- `Page1.html` - Login page  
+- `Page2.html` - Register page 
+- `Design.css` - Styling file for login page and register page
+- `indexstyle.css` - Styling file for first page (index.html)  
 - `README.md` - Project documentation
 
 ## Assets Imagery🖼️
