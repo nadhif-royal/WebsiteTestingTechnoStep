@@ -29,5 +29,5 @@ Check out the live version:
 https://nadhif-royal.github.io/TechnoStepWebsite/
 
 ## Connect with Me 🌐
-LinkedIn : https://www.linkedin.com/in/royalnadhif50/
-Instagram : https://www.instagram.com/royal_nadhif/
+- LinkedIn : https://www.linkedin.com/in/royalnadhif50/
+- Instagram : https://www.instagram.com/royal_nadhif/
