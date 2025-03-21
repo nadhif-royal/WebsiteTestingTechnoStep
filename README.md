@@ -23,3 +23,11 @@ Here are the main files in this repository:
 
 ## Assets Imagery🖼️
 https://technostepimages.blogspot.com/2025/03/technostep-image-assets.html
+
+## Live Demo 🌍
+Check out the live version:
+https://nadhif-royal.github.io/TechnoStepWebsite/
+
+## Connect with Me 🌐
+LinkedIn : https://www.linkedin.com/in/royalnadhif50/
+Instagram : https://www.instagram.com/royal_nadhif/
