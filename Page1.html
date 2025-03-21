@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - TechnoStep</title>
+    <link rel="stylesheet" href="Design.css">
+</head>
+<body onload="checkRegistrationSuccess()" style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXmunvwGT8OmyaTQr5zuCju4QhNgju5UAHPf2iHnVrzwXkZX-oXJyez_9aiwVI5ZbOpoEo4g9DcccYLz4msZPnO_OVHnPY4MunKEwAPgHipnRPRjhVIlX9FsIRri5KtF2GP05loHacgRLgsdqbUy5V0CsB0hHcmf486FtsSEoCEWxJ8kZbmJw2hAdr_QWW/s500/Technology%20AI%202.png'); 
+background-size: cover; 
+background-position: center; 
+background-attachment: fixed;">
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login to <span>TechnoStep</span></h2>
+            <input type="text" id="username" placeholder="Username/Email/Phone">
+            <input type="password" id="password" placeholder="Password">
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>            
+            <button class="login-btn" onclick="login()">Login</button>
+            <p class="forgot-password"><a href="#">Forgot Password or Username?</a></p>
+            <button class="google-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="Google Logo">
+                Login with Google
+            </button>            
+            
+            <p class="signup-text">Don’t have an account? <a href="Page2.html">Sign Up</a></p>
+        </div>
+
+        <div class="image-section">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6mYxLBF_qOB84zwo9dNjEMPY0Pc2tYGMYjiKuoxz5ZGGY3NWo4VumPuuKVXGtWI9zI-hHGPmVdNHoJfSZ8FDT0LCi6UKVMPBgWYSBSBJwqJkAey2To6eSx6Cw6d6JSNmAxmoA9Z_bEFk53jsh8if_WQooc41AE_nQmZ4l6yO-hxqnv8OGVAENxL2Bk7wl/s500/Ai%20Graphics%202.png" alt="AI Hand">
+            <p class="tagline">“Your Tech Journey Starts Here!”</p>
+        </div>
+    </div>
+
+    <script>
+        function checkRegistrationSuccess() {
+            if (sessionStorage.getItem("registered")) {
+                alert("Your Account Has Been Created Successfully");
+                sessionStorage.removeItem("registered");
+            }
+        }
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            
+            if (username && password) {
+                window.location.href = "Dashboard.html";
+            } else {
+                alert("Please enter your username and password!");
+            }
+        }
+    </script>
+</body>
+</html>

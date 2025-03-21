@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.login-box {
+    background: #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    margin: 5px 0;
+    justify-content: start;
+    gap: 5px; 
+}
+
+.remember-me label {
+    margin-left: -110px; 
+}
+
+.remember-me input {
+    transform: scale(0.8); 
+}
+
+.login-btn {
+    background: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    color: black;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.google-btn img {
+    width: 16px;
+}
+
+.image-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 200px;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-style: italic;
+    color: #a2d2ff;
+}
+
+.forgot-password, .signup-text {
+    font-size: 11px; 
+    color: white; 
+    text-align: center; 
+}
+
+.show-password-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.signup-text {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#show-password {
+    transform: scale(0.9);
+    margin-left: 350px; 
+}
+
+#show-password + label {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}

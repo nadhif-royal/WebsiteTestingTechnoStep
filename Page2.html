@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechnoStep</title>
+    <link rel="stylesheet" href="Design.css">
+</head>
+
+<body style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXmunvwGT8OmyaTQr5zuCju4QhNgju5UAHPf2iHnVrzwXkZX-oXJyez_9aiwVI5ZbOpoEo4g9DcccYLz4msZPnO_OVHnPY4MunKEwAPgHipnRPRjhVIlX9FsIRri5KtF2GP05loHacgRLgsdqbUy5V0CsB0hHcmf486FtsSEoCEWxJ8kZbmJw2hAdr_QWW/s500/Technology%20AI%202.png'); 
+background-size: cover; 
+background-position: center; 
+background-attachment: fixed;">
+
+    <div class="wrapper" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="login-container" style="width: 500px; padding: 30px;"> 
+            <div class="login-box" style="width: 100%;"> 
+                <h2>Step into the Future with TechnoStep</h2>
+
+                <label for="email">Email/Phone</label>
+                <input type="text" id="email" placeholder="Enter Your Email or Phone Number">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="At Least 8 Characters">
+
+                <label for="re-password">Re-Enter Password</label>
+                <input type="password" id="re-password" placeholder="Must Match With The Password">
+
+                <div class="show-password-container">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password">Show</label>
+                </div>
+
+                <button class="login-btn" onclick="registerUser()">Sign Up</button>
+
+                <hr>
+
+                <button class="google-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="Google Logo">
+                    Sign Up with Google
+                </button>
+
+                <p class="signup-text">Already have an account? <a href="Page1.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("show-password").addEventListener("change", function () {
+            let password = document.getElementById("password");
+            let rePassword = document.getElementById("re-password");
+
+            if (this.checked) {
+                password.type = "text";
+                rePassword.type = "text";
+            } else {
+                password.type = "password";
+                rePassword.type = "password";
+            }
+        });
+
+        function registerUser() {
+            sessionStorage.setItem("registered", "true");
+            window.location.href = "Page1.html";
+        }
+    </script>
+
+</body>
+</html>
